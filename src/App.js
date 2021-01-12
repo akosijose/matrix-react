@@ -1,15 +1,12 @@
 import "./App.css";
-import Menu from "./components/Menu";
-import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <div className="content">
-        <Menu />
-      </div>
-    </div>
+    <Router>
+      <Sidebar />
+    </Router>
   );
 }
 
